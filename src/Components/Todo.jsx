@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import swal from "sweetalert";
 import TodoList from "./List";
 import "./Todo.css";
 
 export default function Todo() {
-
     const [todos, setTodos] = useState([]);
     const [inputText, setInputText] = useState("");
 
