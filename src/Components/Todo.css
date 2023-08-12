@@ -10,7 +10,7 @@
   z-index: 2;
   position: absolute;
   top: 2.7em;
-  animation: rays 2s ease-in-out infinite;
+  animation: rays 0s ease-in-out infinite;
 }
 
 #emiter,
