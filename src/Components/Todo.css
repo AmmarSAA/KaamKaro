@@ -2,20 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start; 
   height: 100%;
 }
 
 #rays {
   z-index: 2;
-  position: relative;
-  bottom: -1.5em;
+  position: absolute;
+  top: 2.7em;
   animation: rays 2s ease-in-out infinite;
+}
+
+#emiter,
+#rays {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+#emiter {
+  position: absolute;
+  top: 0;
 }
 
 .form {
   position: relative;
-  top: 5em;
+  top: 12em;
   padding: 4%;
   z-index: 3;
   display: flex;
@@ -66,11 +77,12 @@
 .form-footer {
   height: 1.5em;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
   color: white;
   text-decoration: none;
   letter-spacing: 0px;
   font-weight: bold;
+  border-radius: 6px;
   border: none;
   background: rgba(139, 255, 247, 0.486);
   text-shadow: 0px 1px 4px rgb(243, 243, 243);
@@ -120,7 +132,7 @@
   }
 
   50% {
-    top: 50px;
+    top: 110px;
   }
 
   100% {
