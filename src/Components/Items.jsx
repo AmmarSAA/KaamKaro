@@ -49,10 +49,10 @@ const Item = ({ todo, onUpdate, onDelete }) => {
 						value={updatedText}
 						onChange={(e) => setUpdatedText(e.target.value)}
 					/>
-					<Button variant="success" onClick={handleUpdateConfirm} className="text-white px-2 pb-2 ms-2">
+					<Button variant="success" onClick={handleUpdateConfirm} className="text-white px-2 pb-2 ms-2 mb-1">
 						<FaSave />
 					</Button>
-					<Button variant="secondary" onClick={handleCancelClick} className="text-white px-2 pb-2 ms-2">
+					<Button variant="secondary" onClick={handleCancelClick} className="text-white px-2 pb-2 ms-2 mb-1">
 						<AiOutlineClose />
 					</Button>
 				</>
@@ -61,10 +61,10 @@ const Item = ({ todo, onUpdate, onDelete }) => {
 					<input className="form-content" type="text" placeholder="Todo List" disabled={true} readOnly={true}
 						value={todo.text}
 					/>
-					<Button variant="info" onClick={handleUpdateClick} className="text-white px-2 pb-2 ms-2">
+					<Button variant="info" onClick={handleUpdateClick} className="text-white px-2 pb-2 ms-2 mb-1">
 						<FaPencilAlt />
 					</Button>
-					<Button variant="danger" onClick={handleDeleteClick} className="text-white px-2 pb-2 ms-2">
+					<Button variant="danger" onClick={handleDeleteClick} className="text-white px-2 pb-2 ms-2 mb-1">
 						<FaTrash />
 					</Button>
 				</>

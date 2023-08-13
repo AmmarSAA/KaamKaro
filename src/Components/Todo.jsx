@@ -44,7 +44,7 @@ export default function Todo() {
                 <button onClick={(e) => {
                     e.preventDefault();
                     handleAddTodo();
-                }}>Add</button>
+                }} className="btn btn-success">Add Task</button>
 
                 <List
                     todos={todos}
