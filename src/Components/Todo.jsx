@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
-import TodoList from "./List";
+import List from "./List";
 import "./Todo.css";
 
 export default function Todo() {
@@ -21,8 +21,12 @@ export default function Todo() {
         }
     };
 
-    const handleUpdateTodo = (todoToUpdate) => {
-        swal("Update", "Update functionality coming soon!", "info");
+    const handleUpdateTodo = (updatedTodo) => {
+        const updatedTodos = todos.map((todo) =>
+            todo.id === updatedTodo.id ? { ...todo, text: updatedTodo.text } : todo
+        );
+        setTodos(updatedTodos);
+        swal("Updated!", "Task updated successfully", "success");
     };
 
     const handleDeleteTodo = (todoId) => {
@@ -42,7 +46,7 @@ export default function Todo() {
                     handleAddTodo();
                 }}>Add</button>
 
-                <TodoList
+                <List
                     todos={todos}
                     onUpdate={handleUpdateTodo}
                     onDelete={handleDeleteTodo}
