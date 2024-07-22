@@ -1,6 +1,6 @@
 # KaamKaro Todo App
 
-KaamKaro is a simple React-based Todo web app that allows users to manage tasks. Users can add, update (feature coming soon), and delete tasks. The app provides a clean and intuitive interface for managing your to-do list.
+KaamKaro is a simple React-based Todo web app that allows users to manage tasks. Users can add, update, and delete tasks. The app provides a clean and intuitive interface for managing your to-do list.
 
 ## Features
 
