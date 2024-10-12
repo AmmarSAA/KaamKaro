@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import swal from "sweetalert";
 import List from "./List";
 import "./Todo.css";
@@ -91,7 +91,7 @@ export default function Todo() {
                 >
                     <g filter="url(#filter0_di_1_38)">
                         <path
-                            fill="#2B2B2B"
+                            fill="#03dfff"
                             d="M80 27.9997C121.974 27.9997 156 22.4032 156 15.4996L156 40.4998C156 47.4034 121.974 52.9998 80 52.9998C38.0265 52.9998 4.00028 47.4034 4 40.4998V40.4998V15.51C4.0342 22.4089 38.0474 27.9997 80 27.9997Z"
                             clipRule="evenodd"
                             fillRule="evenodd"
